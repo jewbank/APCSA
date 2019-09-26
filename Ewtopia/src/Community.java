@@ -1,4 +1,23 @@
+import java.util.ArrayList;
+public class Community
+{
+  // Attributes
+  String name;
+  ArrayList<Person> members;
 
-public class Community {
+  public Community(String name)
+  {
+    this.name = name;
+    this.members = new ArrayList<Person>();
+  }
 
+  public void addStartingPeople()
+  {
+    members.add(new Person("Bob", 30, 15000, 30000));
+  }
+
+  public String toString()
+  {
+    return name;
+  }
 }
