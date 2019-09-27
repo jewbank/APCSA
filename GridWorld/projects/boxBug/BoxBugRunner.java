@@ -1,7 +1,6 @@
 package boxBug;
 
-import info.gridworld.actor.ActorWorld;
-import info.gridworld.actor.Bug;
+import info.gridworld.actor.*;
 import info.gridworld.grid.Location;
 
 import java.awt.Color;
@@ -11,12 +10,18 @@ import java.awt.Color;
  */
 public class BoxBugRunner
 {
+	public static ActorWorld world = new ActorWorld();
     public static void main(String[] args)
     {
-        ActorWorld world = new ActorWorld();
-        Bug bob = new BoxBug(1000);
-        bob.setColor(Color.ORANGE);
-        world.add(new Location(0, 0), bob);
+        
+
+    	HungryCritter ian = new HungryCritter();
+        
+
+        world.add(new Location(5, 5), ian);
+        world.add(new Location(5, 0), new TastyBug());
+        world.add(new Location(0, 5), new TastyBug());
+        world.add(new Location(0, 0), new TastyBug());
         world.show();
     }
 }

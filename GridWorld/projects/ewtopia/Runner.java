@@ -15,5 +15,6 @@ public class Runner
 		Community myCommunity = new Community("Ewtopia");
 
 		myCommunity.show();
+		myCommunity.addStartingPeople();
 	}
 }
