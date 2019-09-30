@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Bug;
 import info.gridworld.actor.Critter;
-import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
 
 public class HungryCritter extends Critter{
